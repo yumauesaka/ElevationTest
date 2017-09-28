@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuesaka.myapplication.MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <FrameLayout
+        android:id="@+id/top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/second_frame"
+        android:layout_below="@+id/top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:background="@color/colorPrimary" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/third_frame"
+        android:layout_below="@+id/second_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="160dp"/>
+    </FrameLayout>
+
+</RelativeLayout>
